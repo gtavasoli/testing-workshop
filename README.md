@@ -13,12 +13,14 @@ Application testing methods workshop material.
 ## System Requirements
 - [git][git] v2.14.1 or greater
 - [python3][python3] v3.x
+- [jre-8] [jre-8] or greater (To Run JMeter in Development Environment)
 
 All of these must be available in your PATH. To verify things are set up properly, you can run this:
 
 ```
 git --version
 python --version
+java --version (development env.)
 ```
 
 ## Setup
@@ -45,3 +47,4 @@ cd testing-workshop
 
 [git]: https://git-scm.com/
 [python3]: https://www.python.org/downloads/release/python-373/
+[jre-8]: https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
