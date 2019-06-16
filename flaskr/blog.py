@@ -39,13 +39,13 @@ def get_post(id, check_author=True):
     """
     post = (
         get_db()
-        .execute(
+            .execute(
             "SELECT p.id, title, body, created, author_id, username"
             " FROM post p JOIN user u ON p.author_id = u.id"
             " WHERE p.id = ?",
             (id,),
         )
-        .fetchone()
+            .fetchone()
     )
 
     if post is None:
@@ -81,6 +81,14 @@ def create():
             return redirect(url_for("blog.index"))
 
     return render_template("blog/create.html")
+
+
+@bp.route("/<int:id>/view", methods=("GET", "POST"))
+@login_required
+def view(id):
+    """View a post with permanent link."""
+    post = get_post(id)
+    return render_template("blog/view.html", post=post)
 
 
 @bp.route("/<int:id>/update", methods=("GET", "POST"))

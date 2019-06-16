@@ -1,4 +1,5 @@
 """ Quick Fibonacci API """
+import random
 
 from flask import Flask
 import logging
@@ -32,6 +33,14 @@ def wait(number):
     """ Simple wait """
     time.sleep(int(number) / 10)
     return '{"wait": %d}' % (int(number) / 10)
+
+
+@app.route("/slow", methods=["GET"])
+def slow():
+    """ Slow: Random delay"""
+    delay = random.randint(1, 4)
+    time.sleep(delay)
+    return '{"slow": %d}' % delay
 
 
 if __name__ == '__main__':

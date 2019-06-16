@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Edit "{{ post['title'] }}"{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h3>Title</h3>
+<div>{{ post['title'] }}</div>
+<h3>Body</h3>
+<div>{{ post['body'] }}</div>
+<a href="/">Back</a>
+{% endblock %}
