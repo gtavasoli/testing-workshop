@@ -39,6 +39,14 @@ git clone https://github.com/gtavasoli/testing-workshop.git
 cd testing-workshop
 ```
 
+## Running the app
+...
+
+## About the app
+...
+
+## Structure
+...
 
 ## Workshop Plan
 - Introduction [[slides]]
