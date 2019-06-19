@@ -15,19 +15,17 @@
             # assert
             self.assertEqual(actual_person, expected_person)
 
-    def test_new_person_with_mock(self):
-        mocked_get_rp = patch('get_next_person.get_random_person')
-        # arrange
-        user = {'people_seen': []}
-        expected_person = 'Ali'
-
-        mocked_get_rp.return_value = 'Ali'
-
-        # action
-        actual_person = get_next_person(user)
-
-        # assert
-        self.assertEqual(actual_person, expected_person)
-
-
 # --- Get Random Person > Multiple Call -----------------------
+    def test_new_person_with_mock(self):
+        with patch('get_next_person.get_random_person') as mocked_get_rp:
+            # arrange
+            user = {'people_seen': ['Ali', 'Diba']}
+            expected_person = 'Zeynab'
+
+            mocked_get_rp.side_effect = ['Ali', 'Diba', 'Zeynab']
+
+            # action
+            actual_person_1 = get_next_person(user)
+
+            # assert
+            self.assertEqual(actual_person_1, expected_person)

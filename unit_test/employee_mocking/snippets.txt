@@ -1,3 +1,5 @@
+
+
 # --- Mocking ------------------------------
     def monthly_schedule(self, month):
         response = requests.get(f'http://company.com/{self.last}/{month}')

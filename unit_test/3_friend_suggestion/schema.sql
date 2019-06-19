@@ -9,4 +9,5 @@ CREATE TABLE persons (
 );
 
 INSERT INTO persons (id, name)
-VALUES (NULL, 'Ali'), (NULL, 'Babak'), (NULL, 'Mina'), (NULL, 'Zeynab'), (NULL, 'Raha'), (NULL, 'Khadijeh')
+VALUES (NULL, 'Ali'), (NULL, 'Babak'), (NULL, 'Diba'), (NULL, 'Zeynab'), (NULL, 'Raha'), (NULL, 'Khadijeh'),
+  (NULL, 'Omid')
