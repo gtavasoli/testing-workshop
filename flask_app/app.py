@@ -11,7 +11,7 @@ sys.path.insert(0, '/home/ubuntu/testing_workshop/')
 from flask_app import fib
 
 log = logging.getLogger('werkzeug')
-log.disabled = True
+log.disabled = False
 
 app = Flask(__name__)
 

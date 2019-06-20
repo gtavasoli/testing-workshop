@@ -5,7 +5,7 @@ import logging
 import os
 
 log = logging.getLogger('werkzeug')
-log.disabled = True
+log.disabled = False
 
 
 def create_app(test_config=None):
