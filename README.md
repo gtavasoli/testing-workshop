@@ -40,7 +40,7 @@ cd testing-workshop
 ```
 
 ## Workshop Plan
-- Introduction [[slides]]
+- Introduction
 - Unit Testing
   - Calculator Sample
   - Employee Sample
@@ -70,5 +70,4 @@ All of the codebase are MIT licensed unless otherwise specified.
 [git]: https://git-scm.com/
 [python3]: https://www.python.org/downloads/release/python-373/
 [jre-8]: https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
-[slides]: http://
 [flaskr]: https://github.com/pallets/flask/tree/master/examples/tutorial/flaskr
