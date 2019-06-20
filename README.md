@@ -14,7 +14,7 @@ Application testing methods workshop material.
 
 
 ## Topics covered
-1.  Unit Testing with [unittest](https://docs.python.org/3/library/unittest.html)
+1. Unit Testing with [unittest](https://docs.python.org/3/library/unittest.html)
 2. Mocking
 3. Performance Test
 
@@ -52,19 +52,19 @@ cd testing-workshop
 - TDD – Test Driven Development
 - Performance Test
   - JMeter Intro
-    - Sample 1
-    - Sample 2
+    - Sample 1 - Simple test
+    - Sample 2 - Using assertions
   - Flaskr
+    - Parametric requests
     - Single Thread (with or without wait)
     - Multi Thread (GIL)
-    - NGINX + uWSGI (worker) 
-    - NGINX Caching
-    - DB MySQL
+    - NGINX + uWSGI (worker)
+  - JMeter plugins 
   - Profiling
 
 
 ## LICENSE
-All of the codebases are MIT licensed unless otherwise specified. 
+All of the codebase are MIT licensed unless otherwise specified. 
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
