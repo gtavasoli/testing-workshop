@@ -14,7 +14,7 @@ def get_page_content(page_number):
 
 
 if __name__ == '__main__':
-    max_page = 30
+    max_page = 60
 
     with open("./news.csv", 'w') as f:
         for i in range(0, max_page):
@@ -27,8 +27,7 @@ if __name__ == '__main__':
                     title = li.select_one('h3').select_one('a').get_text()
                     brief = li.select_one('p').get_text()
                     print(title)
-                    print(brief)
                     f.write('{},{}\n'.format(title, brief))
                 except Exception as e:
                     pass  # Silly
-            sleep(2)
+            sleep(1)
