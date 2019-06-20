@@ -6,5 +6,3 @@ def get_json(filename):
         return json.loads(open(filename).read())
     except (IOError, ValueError):
         return ""
-
-def
