@@ -1,0 +1,31 @@
+# --- IOError ------------------------------
+    def test_get_json_ioerror(self):
+        with patch('builtins.open') as mock_open:
+            # arrange
+            filename = "does_not_exit.json"
+            mock_open.side_effect = IOError
+
+            # action
+            actual_result = get_json(filename)
+
+            # assert
+            self.assertEqual('', actual_result)
+
+
+# --- ValueError -----------------------------
+    def test_get_json_ValueError(self):
+        with patch('builtins.open') as mock_open, \
+                patch('json.loads') as mock_loads:
+            # arrange
+            filename = "does_not_exit.json"
+
+            mock_file = Mock()
+            mock_file.read.return_value = '{"foo":"bar"}'
+            mock_open.return_value = mock_file
+            mock_loads.side_effect = ValueError
+
+            # action
+            actual_result = get_json(filename)
+
+            # assert
+            self.assertEqual('', actual_result)
