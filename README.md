@@ -49,7 +49,6 @@ cd testing-workshop
    - Random person sample
   - Employee Sample
   - Error sample
-- TDD – Test Driven Development
 - Performance Test
   - JMeter Intro
     - Sample 1 - Simple test
