@@ -29,3 +29,19 @@
 
             # assert
             self.assertEqual(actual_person_1, expected_person)
+
+# ---- Behavior verification ------------------------------------
+    def test_evaluate(self):
+        with patch('evaluate.let_down_gently') as mock_let_down:
+            # arrange
+            person1 = 'Ali'
+            person2 = {
+                'likes': ['Bita', 'Mohammad'],
+                'dislike': ['Ali']
+            }
+
+            #action
+            evaluate(person1, person2)
+
+            #assert
+            self.assertEqual(mock_let_down.call_count, 1)
