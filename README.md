@@ -2,7 +2,7 @@
 
 Application testing methods workshop material. 
 
-[![Website gtavasoli.blog.ir](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://gtavasoli.com/)
+[![Website gtavasoli.com](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://gtavasoli.com/)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://t.me/gtavasoli_me)
 
 ## Table of Contents
